@@ -1,0 +1,744 @@
+body{
+    color: #96836d;
+}
+nav{
+    width:100%;
+    height:100px;
+    background-color: rgb(255, 255, 255);
+    top:0;
+    right: 0;
+    position: fixed;
+    z-index: 1002;
+    border: 1px, solid;
+    border-color: rgb(75, 98, 66);
+}
+ul{
+    list-style-type: none;
+    align-items:inline;
+}
+
+li.left{
+    float: left;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+    align-items: center;
+}
+li.right{
+    float: right;
+    list-style-type: none;
+    padding-left: 20px;
+    top: 0;
+    padding-top: 35px;
+    padding-right: 20px;
+    align-items: center;
+    border-style: none;
+}
+.navbarcart{
+    border: none;
+    background-color: transparent;
+}
+li a{
+    color: rgb(75, 98, 66);
+    font-style:italic;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+#logo{
+    height:50px;
+    width:50px;
+    margin-left: 35%;
+    margin-right: 20%;
+    padding-top: 25px;
+}
+.navbar{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+#cartcover{
+    background-color: rgba(0, 0, 0, 0.448);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+}
+#cartcorner{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    z-index: 1001;
+    margin-left: 0; 
+}
+#cartheader{
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+#emptycart{
+    padding-left: 10%;
+}
+#scroll-cart-bottom{
+    width: 50%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    margin-left: 0;
+    align-items: center;
+    height: 100px;
+    bottom: 0;
+}
+#findproducts{
+    height:50px;
+    bottom: 20px;
+    margin-top: 200px;
+    width:30%;
+    margin-left: 10%;
+    background-color:rgb(75, 98, 66);
+    color: white;
+    z-index: 1002;
+    position: fixed;
+    border-style: none;
+    
+}
+#findproducts:hover{
+    background-color: white;
+    color:rgb(75, 98, 66) ;
+    border: rgb(75, 98, 66) 1px solid;
+}
+
+
+.product-products{
+    height: 100px;
+    width: 90%;
+    background-color:#efeae6;
+    display: flex;
+    margin-top: 5%;
+    
+}
+.product-pic{
+    width: 10%;
+    position: absolute;
+    height:10%;
+    margin-left: 3%;
+    margin-top: 2%;
+    border-radius: 10%;
+    border: #6f665b 1px solid;
+}
+.product-title{
+    position: absolute;
+    margin-left: 20%;
+    font-size: medium;
+    margin-top: 3%;
+}
+.product-price{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 5%;
+}
+
+.removeFromCartButton{
+    background-color: transparent;
+    margin-left: 75%;
+    position: absolute; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-top: 5%;
+    opacity: 50%;
+
+}
+.removeFromCartButton-icon{
+    height: 20px;
+    width: 20px;
+}
+
+#cover{
+    object-fit: cover;
+    z-index: -1;
+    height: 710px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+#startheader{
+    z-index: 2;
+    top: 150px;
+    color:rgb(255, 255, 255);
+    position: absolute;
+    left: 500px;
+    font-size: 7rem;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+#startbutton{
+    z-index: 3;
+    position:absolute;
+    top: 400px;
+    left: 40%;
+    right: 40%;
+    color: white;
+    background-color: rgb(75, 98, 66);
+    border-style: none;
+    width: 20%;
+    height: 50px;
+    margin-bottom: 0%;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+#startbutton:hover{
+    color: rgb(75, 98, 66);
+    background-color: white;
+}
+
+#olives-right{
+    height: 300px;
+    width: 25%;
+    position:absolute;
+    z-index: 100;
+    margin-left: 75%;
+    top: 580px;
+    transition: transform 1s ease-out;
+    
+}
+#olives-right.olives-animation{
+    transform: rotate(20deg) ;
+
+}
+#olives-left{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: 100;
+    margin-left: 10px;
+    top: 300px;
+}
+#startfoot-container {
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    margin-top: 0;
+    z-index: 51;
+    background-color:#6f665b;
+    overflow: hidden; 
+    align-items: center;
+}
+
+#startfoot {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation: startfoot-scroll 40s linear infinite;
+}
+
+.startfoot-element {
+    flex-shrink: 0;
+    color: rgb(255, 255, 255);
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@keyframes startfoot-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Verschiebe um die gesamte Breite der Inhalte */
+    }
+}
+  
+#essentials{
+    z-index: 50;
+    margin-top: 570px;
+    background-color: white;
+    height: 800px;
+    margin-bottom: 0;
+}
+#essentialsheader{
+    z-index: 50;
+    padding-top:100px;
+    color:  rgb(75, 98, 66);
+    padding-left: 10%;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+#essentialssubheader{
+    bottom: 0;
+    padding-left: 10%;
+    z-index: 50;
+    color:  #6f665b;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+#essentialsproducts{
+
+    z-index: 20;
+    height: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    width: 80%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+    z-index: 50;
+    margin-bottom: 50px;
+}
+#essentialsproducts::-webkit-scrollbar {
+    display: none;
+}
+#left-btn{
+    float:left;
+    margin-left: 0;
+    z-index: 90;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    height: 500px;
+    width: 10%;
+    margin-top: 200px;
+    background-color: white;
+   
+}
+#left-btn-icon{
+    float: left;
+    z-index: 200;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    height: 20px;
+    width: 40px;
+    
+}
+#right-btn{
+    float: right;
+    margin-left: 90%;
+    z-index: 90;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    height: 500px;
+    width: 10%;
+    margin-top: 200px;
+    background-color: white;
+    
+}
+#right-btn-icon{
+    float: right;
+    z-index: 100;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    height: 20px;
+    width: 40px;
+}
+
+#shopproducts{
+    margin-top: 200px;
+}
+
+.products{
+    width: 25%;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 400px;
+    z-index: 5;
+    float: left;
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 20px;
+    border-color: transparent;
+    box-shadow: 10px #6f665b;
+    background-color: #efeae6;
+    transition: transform 0.2s ease-out;
+}
+.products:hover{
+    transform: scale(1.05);
+
+}
+.productpic{
+    width: 100%;
+    height: 75%;
+    z-index: 6;
+    max-width: fit-content;
+    position:absolute;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 30%;
+}
+
+.producttext{
+    z-index: 30;
+    height: 25%;
+    width: 100%;
+    top: 75%;
+    position: absolute;
+
+}
+
+
+.productcart{
+    bottom:25%;
+    border-radius: 10%;
+    width: 30%;
+    margin-right: 70%;
+    margin-left: 10%;
+    height: 10%;
+    z-index: 40;
+    position:absolute;
+    text-align: center;
+    background-color:rgb(75, 98, 66);
+    color: rgb(255, 255, 255);
+    border-style: none;
+
+}
+.productcart:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(75, 98, 66);
+}
+
+.productheader{
+    text-align: center;
+    width: 100%;
+    position:absolute;
+    font-size: 1rem;
+    color:#6f665b;
+    
+}
+.productdescription{
+    position:absolute;
+    margin-top: 15%;
+    font-size: 0.8rem;
+    color:#6f665b;
+    text-align: center;
+    width: 100%;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+    
+.productprice{
+    position: absolute;
+    font-size: 1rem;
+    margin-top: 22%;
+    color:rgb(75, 98, 66);
+    text-align: center;
+    width: 100%;
+}
+
+#home-about{
+    margin-top:0;
+    width: 100%;
+    background-color:rgb(75, 98, 66) ;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    
+}
+#home-about-img{
+    width: 65%;
+    height: 100%;
+    margin-left: 35%;
+    right: 0;
+    
+    
+}
+#home-about-left{
+    width: 35%;
+    margin-left: 0;
+    height: 100%;
+    position: absolute;
+    
+    
+}
+#home-about-left-header{
+    margin-top: 20%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size:3rem;
+    position: absolute;
+    
+}
+#home-about-left-subheader{
+    margin-top:40%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    position: absolute;
+    
+}
+#home-about-left-button{
+    margin-top: 60%;
+    height: 10%;
+    width: 60%;
+    margin-left: 20%;
+    color: rgb(75, 98, 66);
+    background-color: white;
+    position: absolute;
+    border-style: none;
+    transition: transform 0.5s ease-out;
+}
+#home-about-left-button:hover{
+    transform: scale(1.2);
+    background-color:  #efeae6;
+}
+#home-product1{
+    position: absolute;
+    width: 100%;
+    margin-top: 500px;
+    background-color: white;
+    display: flex;
+    height: 500px;
+}
+#home-product1-top{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    margin-top: 0;
+    align-items: center;
+}
+#home-product1-top-header{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+}
+#home-product1-top-subheader{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    margin-top: 5%;
+    text-align: center;
+}
+#home-product1-img{
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    margin-top: 7.5%;
+    margin-left: 10%;
+}
+#home-product1-right{
+    position: absolute;
+    display: flex;
+    width: 65%;
+    height: 85%;
+    margin-left: 35%;
+}
+#home-product1-right-button{
+    height: 10%;
+    width: 30%;
+    margin-top: 40%;
+    margin-left: 50%;
+    color: white;
+    background-color: rgb(75, 98, 66);
+    position: absolute;
+    border-style: none;
+    transition: transform 0.5s ease-out;
+}
+#home-product1-right-button:hover{
+    transform: scale(1.2);
+    background-color:  #ffffff;
+    border:1px solid rgb(75, 98, 66);
+    color: rgb(75, 98, 66);
+}
+
+
+
+#shopheader{
+    size: 10rem;
+    text-align: center;
+
+}
+
+
+
+/* Allgemeiner Stil */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.products-product-page{
+    display: none;
+}
+
+
+/* Produktanzeige */
+.productview {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.productview img {
+    display: none;
+}
+.productview img.active {
+    display: block !important;
+    z-index: 11;
+    float: left;
+    height: 500px;
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 0%;
+    left: 0%;
+    position: absolute;
+    margin-right: 0%;
+
+}
+
+/* Produktinformation */
+.productinfo {
+    margin-right: 5%;
+    margin-top: 130px;
+    width: 40%;
+    float: right;
+}
+.productinfoheader{
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    color: #6f665b;
+    font: size 2rem;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+.productinfocontainer{
+    display:flex;
+    align-items: inline;
+}
+.productinfodescription, .productinfousage, .productinfoingredients{
+    float: right;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 20%;
+}
+.productinfodescriptionheader, .productinfousageheader, .productinfoingredientsheader{
+    text-decoration: underline;
+    width: 30%;
+    margin: 10%;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+.productinfodescriptiontext, .productinfousagetext, .productinfoingredientstext{
+    width: 100%;
+    margin-top: 160px;
+    display: none;
+    margin-left: 0%;
+    
+}
+.activeinfo{
+    display: block;
+    background-color: white;
+    position: absolute;
+}
+.activeinfoheader{
+    scale:1.2;
+
+}
+.notactiveinfoheader{
+    scale:0.8;
+    color: #555;
+    text-decoration: none;
+}
+.productinfocart {
+    background-color: #6f665b;
+    color: rgb(255, 255, 255);
+    border: 1px,solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 145px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+
+}
+.productinfocart:hover {
+    background-color: #ffffff;
+    color: #6f665b;
+}
+
+/* Bewertungsbereich */
+#totalreviews {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 800px;
+}
+.totalstars{
+    width: 100px;
+    height: 200px;
+}
+.stars{
+    width: 70px;
+    height: 20px;
+}
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 800px;
+}
+.review {
+    background-color: rgb(75, 98, 66);
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.customerpicture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.customername {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:#6f665b;
+}
+.reviewtext {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+/* Navigation zwischen Bildern */
+#prev-btn, #next-btn {
+   
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px;
+    border: none;
+    margin-top: 580px;
+    margin-left: 180px;
+    
+}
+#prev-btn-icon, #next-btn-icon{
+   height: 15px;
+   width: 37px;
+}
+#prev-btn:hover, #next-btn:hover {
+    scale: 1.5;
+}
+
+

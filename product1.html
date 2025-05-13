@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scriptproduct.js" defer></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="left"><a href="shop.html">shop</a></li>
+                <li class="left"><a href="about.html">about</a></li>
+                <img id="logo" src="logo.png" alt="logo">
+                <li class="right"><button class="navbarcart" onclick="cartbutton()"><img class="navbar" src="cart.jpg" alt="cart"></button></li>
+            </ul>
+        </nav>
+
+        <div id="cartcover">
+            <div id="cartcorner">
+                <h1 id="cartheader">YOUR CART</h1>
+                <h3 id="emptycart">Your cart is empty</h3>
+                <ul id="cartList">
+                    <!-- Dynamically added items will appear here -->
+                </ul>
+                <a href="shop.html">
+                    <button id="findproducts">Find products</button>
+                </a>
+            </div>
+        </div>
+        
+        
+        <div class="productview">
+            <img class="active" src="pic1.jpg" alt="Bild 1">
+            <img src="pic2.jpg" alt="Bild 2">
+            <img src="pic3.jpg" alt="Bild 3">
+        </div>
+        <div id="product2" class="products-product-page" class="products">
+            <button class="productcart" onclick="addToCart('product2')">Add to cart</button>
+            <a class="productlink" href="product1.html">
+                <img class="productpic" src="pic2.jpg">
+                <div class="producttext">
+                    <h3 class="productheader">Product 2</h3>
+                    <p class="productdescription">For long, healthy, shiny hair</p>
+                    <p class="productprice">20,99€</p>
+                </div>
+            </a>
+        </div>
+        <div class="productinfo">
+            <h1 class="productinfoheader">Name Of Product</h1>
+                <div class="productinfocontainer">
+                    
+                    <h3 onclick="showproductinfodescription()" class="productinfodescriptionheader">Description</h3>
+                    <p class="productinfodescriptiontext">This product is used for hair all hair types and gives you long nice shiny hair oil for use on hair </p>
+                   
+                    <h3 onclick="showproductinfousage()"class="productinfousageheader">Usage</h3>
+                    <p class="productinfousagetext">Step 1: kjshdgdadqduwdjdn jbadsszugd kjqdkj <br> Step 2: hdg hjdge xjhg jhg <br> Step 3: iuewbma </p>
+
+                    <h3 onclick="showproductinfoingredients()" class="productinfoingredientsheader">Ingredients</h3>
+                    <p class="productinfoingredientstext">hdhfwefa <br>jhdhadja<br>hgvdjhadsjhbad</p>
+                    
+                </div>
+            <button onclick="addToCart('product2')" class="productinfocart">add to cart</button>
+        </div>
+
+        <button id="prev-btn" onclick="prev()"><img id="prev-btn-icon" src="arrow-left.png"></button>
+        <button id="next-btn" onclick="next()"><img id ="next-btn-icon" src="arrow-right.png"></button>
+
+        <h1 id="totalreviews">TOTAL REVIEWS</h1>
+        <img class="totalstars" src="totalstars.png">
+        <p class="basedon">based on 0 reviews</p>
+
+        <h1 id="customerreviews">CUSTOMER REVIEWS</h1>
+        <div class="reviews">
+            <div class="review">
+                <img class="customerpicture" src="customer.png">
+                <h1 class="customername">CUSTOMER</h1>
+                <br>
+                <img class="stars" src="fivestars.png">
+                <p class="reviewtext">Fantastic product!</p>
+            </div>
+            <div class="review">
+                <img class="customerpicture" src="customer.png">
+                <h1 class="customername">CUSTOMER</h1>
+                <br>
+                <img class="stars" src="fivestars.png">
+                <p class="reviewtext">Fantastic product!</p>
+            </div>
+            <div class="review">
+                <img class="customerpicture" src="customer.png">
+                <h1 class="customername">CUSTOMER</h1>
+                <br>
+                <img class="stars" src="fivestars.png">
+                <p class="reviewtext">Fantastic product!</p>
+            </div>
+            <div class="review">
+                <img class="customerpicture" src="customer.png">
+                <h1 class="customername">CUSTOMER</h1>
+                <br>
+                <img class="stars" src="fivestars.png">
+                <p class="reviewtext">Fantastic product!</p>
+            </div>
+        </div>
+
+    </body>
+</html>

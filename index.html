@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="left"><a href="shop.html">shop</a></li>
+                <li class="left"><a href="about.html">about</a></li>
+                <img id= logo src="logo.png" alt="logo">
+                <li class="right"><button class="navbarcart" onclick="cartbutton()"><img class="navbar" src="cart.png" alt="cart"></button></li>
+            </ul>
+        </nav>
+
+
+        <div id="cartcover">
+            <div id="cartcorner">
+                <h1 id="cartheader">YOUR CART</h1>
+                <h3 id="emptycart">Your cart is empty</h3>
+                <ul id="cartList">
+                    <!-- Dynamically added items will appear here -->
+                </ul>
+                <div id="scroll-cart-bottom">
+                    <a href="shop.html">
+                        <button id="findproducts">Find products</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <img id="olives-right" src="olives.png">
+        
+        <div id="start">
+            <img id="cover" src="pic1.jpg">
+            <h1 id="startheader">HAIR OIL</h1>
+            <a href="shop.html"><button id="startbutton">Discover our natural products</button></a>
+        </div>
+        <div id="startfoot-container">
+            <div id="startfoot">
+                <h3 class="startfoot-element">VEGAN</h3>
+                <h3 class="startfoot-element">100% NATURAL</h3>
+                <h3 class="startfoot-element">CRUELTY FREE</h3>
+                <h3 class="startfoot-element">FAIR TRADE</h3>
+                <h3 class="startfoot-element">AUTHENTIC</h3>
+                <h3 class="startfoot-element">INDIAN</h3>
+
+                <h3 class="startfoot-element">VEGAN</h3>
+                <h3 class="startfoot-element">100% NATURAL</h3>
+                <h3 class="startfoot-element">CRUELTY FREE</h3>
+                <h3 class="startfoot-element">FAIR TRADE</h3>
+                <h3 class="startfoot-element">AUTHENTIC</h3>
+                <h3 class="startfoot-element">INDIAN</h3>
+            </div>
+        </div>
+        <div id="essentials">
+            <button id="right-btn"><img id="right-btn-icon" src="arrow-right.png"></button>
+            <button id="left-btn"><img id="left-btn-icon" src="arrow-left.png"></button>
+            <h1 id="essentialsheader">THE ESSENTIALS</h1>
+            <p id="essentialssubheader">our must have`s for YOUR hair-care rotine!</p>
+            <div id="essentialsproducts">
+                
+                <div id="product3" class="products">
+                    <button class="productcart" onclick="event.stopPropagation(); addToCart('product3')">Add to cart</button>
+                    <img class="productpic" src="pic3.jpg">
+                        <div class="producttext">
+                            <h3 class="productheader">Product 3</h3>
+                            <p class="productdescription">For long, healthy, shiny hair</p>
+                            <p class="productprice">20,99€</p>
+                        </div>
+                </div>
+                <div id="product2" class="products">
+                    <button class="productcart" onclick="addToCart('product2')">Add to cart</button>
+                    <a class="productlink" href="product1.html">
+                        <img class="productpic" src="pic2.jpg">
+                        <div class="producttext">
+                            <h3 class="productheader">Product 2</h3>
+                            <p class="productdescription">For long, healthy, shiny hair</p>
+                            <p class="productprice">20,99€</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="product3" class="products">
+                    <button class="productcart" onclick="event.stopPropagation(); addToCart('product3')">Add to cart</button>
+                    <img class="productpic" src="pic3.jpg">
+                        <div class="producttext">
+                            <h3 class="productheader">Product 3</h3>
+                            <p class="productdescription">For long, healthy, shiny hair</p>
+                            <p class="productprice">20,99€</p>
+                        </div>
+                </div>
+                <div id="product3" class="products">
+                    <button class="productcart" onclick="event.stopPropagation(); addToCart('product3')">Add to cart</button>
+                    <img class="productpic" src="pic3.jpg">
+                        <div class="producttext">
+                            <h3 class="productheader">Product 3</h3>
+                            <p class="productdescription">For long, healthy, shiny hair</p>
+                            <p class="productprice">20,99€</p>
+                        </div>
+                </div>
+                <div id="product3" class="products">
+                    <button class="productcart" onclick="event.stopPropagation(); addToCart('product3')">Add to cart</button>
+                    <img class="productpic" src="pic3.jpg">
+                        <div class="producttext">
+                            <h3 class="productheader">Product 3</h3>
+                            <p class="productdescription">For long, healthy, shiny hair</p>
+                            <p class="productprice">20,99€</p>
+                        </div>
+                </div>
+                <div id="product3" class="products">
+                    <button class="productcart" onclick="event.stopPropagation(); addToCart('product3')">Add to cart</button>
+                    <img class="productpic" src="pic3.jpg">
+                        <div class="producttext">
+                            <h3 class="productheader">Product 3</h3>
+                            <p class="productdescription">For long, healthy, shiny hair</p>
+                            <p class="productprice">20,99€</p>
+                        </div>
+                </div>
+                <div id="product3" class="products">
+                    <button class="productcart" onclick="event.stopPropagation(); addToCart('product3')">Add to cart</button>
+                    <img class="productpic" src="pic3.jpg">
+                        <div class="producttext">
+                            <h3 class="productheader">Product 3</h3>
+                            <p class="productdescription">For long, healthy, shiny hair</p>
+                            <p class="productprice">20,99€</p>
+                        </div>
+                </div>
+            
+                </div>
+            </div>
+        </div>
+        <div id="home-about">
+            <img id="home-about-img" src="about us.webp">
+            <div id="home-about-left">
+                <h1 id="home-about-left-header">Our Brand</h1>
+                <h4 id="home-about-left-subheader">Get to know us better</h4>
+                <a href="about.html">
+                    <button id="home-about-left-button">About us</button>
+                </a>
+            </div>
+        </div>
+        <div id="home-product1">
+            <div id="home-product1-top">
+                <h1 id="home-product1-top-header">NEW PRODUCT</h1>
+                <h4 id="home-product1-top-subheader">shop our new product</h4>
+            </div>
+            <img id="home-product1-img" src="home-product1-img.png">
+            <div id="home-product1-right">
+                <img id="home-product1-icons" src="home-product1-icons.png">
+                <a href="product1.html">
+                    <button id="home-product1-right-button">shop product</button>
+                </a>
+            </div>   
+        </div>
+       
+
+        
+    </body>
+</html>
